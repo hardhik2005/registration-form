@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: registration-form
+    runtime: php
+    plan: free
+    startCommand: "php -S 0.0.0.0:10000 -t ."
+    healthCheckPath: /
+    region: oregon
+    repo: https://github.com/Charan-AL/Mannith
+    branch: main
